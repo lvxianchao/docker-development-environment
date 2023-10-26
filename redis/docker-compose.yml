@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:7.2.0
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - "./conf/redis.conf:/etc/redis.conf"
+      - "./data:/usr/local/var/db/redis"
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+    command:
+      [
+        "redis-server",
+        "/etc/redis.conf",
+      ]
