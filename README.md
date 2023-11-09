@@ -4,6 +4,7 @@
 
 * MySQL 8.0.34
 * Redis 7.2.0
+* Nexus 3.62.0
 
 ## MySQL
 
@@ -11,3 +12,10 @@
 * password: `root`
 
 ## Redis
+
+* port: `6379`
+* password: ``
+
+## Nexus
+
+* port: `8081`
