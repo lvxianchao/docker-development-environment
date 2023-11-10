@@ -19,3 +19,11 @@
 ## Nexus
 
 * port: `8081`
+
+## Nginx Proxy Manager
+
+### port
+
+* `80`
+* `81`
+* `443`
