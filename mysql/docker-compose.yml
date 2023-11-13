@@ -1,6 +1,6 @@
 version: '3'
 services:
-  master:
+  mysql:
     image: mysql:8.0.34
     container_name: mysql
     command:
