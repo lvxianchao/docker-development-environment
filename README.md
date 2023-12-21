@@ -13,17 +13,26 @@
 
 ## Redis
 
-* port: `6379`
-* password: ``
+* port: 6379
 
 ## Nexus
 
-* port: `8081`
+* port: 8081
 
 ## Nginx Proxy Manager
 
-### port
+端口：
 
-* `80`
-* `81`
-* `443`
+* 80
+* 81
+* 443
+
+## MinIO
+
+* 9000
+* 9090
+
+## Gitea
+
+* 3000
+* 222
