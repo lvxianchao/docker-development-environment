@@ -16,7 +16,7 @@ services:
       - ./data/wordpress:/var/www/html
 
   db:
-    image: mysql:8.0
+    image: mysql:8.0.34
     restart: always
     environment:
       MYSQL_DATABASE: exampledb
