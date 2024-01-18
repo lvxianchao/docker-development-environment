@@ -36,3 +36,15 @@
 
 * 3000
 * 222
+
+## WordPress
+
+## YouTrack
+
+ 端口：`8080`
+ 
+ 需要将 `youtrack` 目录授权：
+
+ ```shell
+chown -R 13001:13001 <path to youtrack directory>
+ ```
