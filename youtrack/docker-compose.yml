@@ -2,6 +2,7 @@ version: '3'
 
 services:
   youtrack:
+    container_name: youtrack
     image: jetbrains/youtrack:2022.3.65379
     restart: always
     ports:
