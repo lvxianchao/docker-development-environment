@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  youtrack:
+    image: jetbrains/youtrack:2022.3.65379
+    restart: always
+    ports:
+      - 8080:8080
+    volumes:
+      - ./backups:/opt/youtrack/backups
+      - ./conf:/opt/youtrack/conf
+      - ./data:/opt/youtrack/data
+      - ./logs:/opt/youtrack/logs
