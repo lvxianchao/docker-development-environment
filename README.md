@@ -48,3 +48,7 @@
  ```shell
 chown -R 13001:13001 <path to youtrack directory>
  ```
+
+ ## Dozzle
+
+ > Dozzle 是一款开源的 Docker 日志查看工具，它提供了一个简单而直观的 Web 界面，可以方便地查看运行中的 Docker 容器的实时日志。轻量、快速、易用，不需要对 Docker 容器进行任何配置或修改。
