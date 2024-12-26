@@ -1,8 +1,7 @@
-version: '3'
 services:
   nginx-proxy-manager:
     container_name: nginx-proxy-manager
-    image: 'chishin/nginx-proxy-manager-zh:2.11.1'
+    image: 'chishin/nginx-proxy-manager-zh:2.12.1'
     restart: unless-stopped
     ports:
       - '80:80'
