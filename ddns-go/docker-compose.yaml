@@ -1,0 +1,9 @@
+services:
+  ddns-go:
+    image: jeessy/ddns-go:v6.7.7
+    container_name: ddns-go
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./data:/root
+    command: ["sleep", "infinity"]
