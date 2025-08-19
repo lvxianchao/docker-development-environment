@@ -35,6 +35,7 @@ services:
       MYSQL_SERVICE_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - "${NACOS_PORT}:8848"
+      - "9848:9848"
     volumes:
       - ./nacos/logs:/home/nacos/logs
       - ./nacos/data:/home/nacos/data
