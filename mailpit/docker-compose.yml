@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: mailpit
+    restart: unless-stopped
+
+    ports:
+      - "1025:1025"   # SMTP
+      - "8025:8025"   # Web UI
+
+    # 挂载数据和配置
+    volumes:
+      - ./data/mailpit.db:/data/mailpit.db
+
+    # Mailpit 使用环境变量配置
+    env_file:
+      - ./data/config.env
+
+    # 如果你不想用 env_file，也可以直接写 environment
+    # environment:
+    #   MP_DATA_FILE: /data/mailpit.db
+    #   MP_SMTP_AUTH_ACCEPT_ANY: "true"
+    #   MP_SMTP_AUTH_ALLOW_INSECURE: "true"
