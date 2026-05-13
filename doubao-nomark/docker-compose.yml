@@ -1,0 +1,7 @@
+services:
+  doubao-app:
+    image: ihmily/doubao-nomark
+    container_name: doubao-nomark
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
