@@ -1,0 +1,11 @@
+services:
+  wechat-article-exporter:
+    image: ghcr.io/wechat-article/wechat-article-exporter:latest
+    container_name: wechat-article-exporter
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+    volumes:
+      - ./.data:/app/.data
