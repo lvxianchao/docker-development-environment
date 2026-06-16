@@ -8,4 +8,4 @@ services:
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
     volumes:
-      - ./.data:/app/.data
+      - ./data:/app/.data
